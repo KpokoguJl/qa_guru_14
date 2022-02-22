@@ -22,11 +22,12 @@ public class TestBase {
 
         String browserName = String.valueOf(config.getBrowser());
         String browserVersion = String.valueOf(config.getBrowserVersion());
+        String browserResolution = config.getResolution();
 
         Configuration.browser = browserName;
         Configuration.browserVersion = browserVersion;
         Configuration.baseUrl = config.getBaseUrl();
-        Configuration.browserSize = config.getResolution();
+        Configuration.browserSize = browserResolution;
 
         if (config.getRemote()){
             Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
@@ -39,6 +40,7 @@ public class TestBase {
 
         Attach.attachAsText("Browser: ", browserName);
         Attach.attachAsText("Version: ", browserVersion);
+        Attach.attachAsText("Resolution: ", browserResolution);
     }
 
     @AfterEach
