@@ -9,10 +9,10 @@ repositories {
 
 def selenideVersion = "6.3.3",
     junitVersion = "5.8.2",
-    slf4jVersion = "1.7.32",
+    slf4jVersion = "1.7.36",
     javaFakerVersion = "1.0.2",
     allureSelenideVersion = "2.17.2",
-    owenVersion = "1.0.4"
+    ownerVersion = "1.0.12"
 
 group 'qa.guru.allure'
 version '1.0-SNAPSHOT'
@@ -36,8 +36,7 @@ dependencies {
             "com.github.javafaker:javafaker:$javaFakerVersion",
             "io.qameta.allure:allure-selenide:$allureSelenideVersion",
             "org.junit.jupiter:junit-jupiter-api:$junitVersion",
-            "org.aeonbits.owner:owner:$owenVersion"
-    )
+            "org.aeonbits.owner:owner:$ownerVersion")
     testRuntimeOnly(
             "org.slf4j:slf4j-simple:$slf4jVersion",
             "org.junit.jupiter:junit-jupiter-engine:$junitVersion")
