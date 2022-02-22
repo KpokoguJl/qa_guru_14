@@ -2,7 +2,7 @@
   "app": {
     "bot": {
       "token": "5114227707:AAHOeC4ERE8I3vXqDy9wNNsZ39qfPG5ksN4",
-      "chat": "-420796345",
+      "chat": "162667320",
       "replyTo": ""
     },
     "base": {
@@ -11,8 +11,8 @@
       "allureFolder": "./allure-report/",
       "allureLinkPath": "allure",
       "chart": true,
-      "chartName": "Unicom Autotests",
-      "project": "Unicom24"
+      "chartName": "Unicom24Autotests",
+      "project": "Unicom24 Autotests"
     },
     "mail": {
       "host": "",
