@@ -21,7 +21,7 @@ public class TestBase {
         WebDriverConfig config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
 
         String browserName = String.valueOf(config.getBrowser());
-        String browserVersion = String.valueOf(config.getBrowserVersion());
+        String browserVersion = config.getBrowserVersion();
         String browserResolution = config.getResolution();
 
         Configuration.browser = browserName;

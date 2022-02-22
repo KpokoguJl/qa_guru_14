@@ -11,8 +11,8 @@
       "allureFolder": "./allure-report/",
       "allureLinkPath": "allure",
       "chart": true,
-      "chartName": "",
-      "project": ""
+      "chartName": "Unicom Autotests",
+      "project": "Unicom24"
     },
     "mail": {
       "host": "",
