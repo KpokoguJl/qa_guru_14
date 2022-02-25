@@ -30,7 +30,10 @@ public class TestBase {
         Configuration.browserSize = browserResolution;
 
         if (config.getRemote()){
-            Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+            String login = config.login(),
+                    password = config.password();
+
+            Configuration.remote = String.format("https://%s:%s@selenoid.autotests.cloud/wd/hub", login, password);
 
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setCapability("enableVNC", true);
